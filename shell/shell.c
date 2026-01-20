@@ -6,12 +6,6 @@
 #include <signal.h>
 #include <sys/file.h>
 
-/*
-    Не обработаны неправильные строки
-    Нельзя использовать () > file
-    Фоновый режим на все процессы и только в конце строки
-*/
-
 struct tree_proc{ // Дерево операций над процессами
     struct tree_proc *left;
     struct tree_proc *right;
